@@ -1,0 +1,33 @@
+
+
+.base-ajustes{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-lista-ajustes{
+    background-color: grey;
+    padding: 1rem;
+}
+
+ul{
+    background-color: lightgray;
+}
+
+ul.li{
+    margin: 1rem;
+    display: flex;
+}
+
+
+
+.turn_on_off{
+    background-color: yellow;
+    color: black;
+}
+
+.special{
+    background-color: black;
+    color: aliceblue;
+}
