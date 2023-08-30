@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Wattify - Ajustes</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Wattify" name="keywords">
+    <meta content="Empieza a ahorrar hoy" name="description">
+
+    <!-- Favicon -->
+    <link href="assets/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="assets/styles/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="assets/styles/style.css" rel="stylesheet">
+
+    <!--ajustes Stylesheet-->
+    <link href="assets/styles/ajustes.css" rel ="stylesheet"> 
+</head>
+
+<body>
+    <script>window.addEventListener('load', function() {
+        // Obtener el nombre del usuario de la sesión
+        var userName = sessionStorage.getItem('userName');
+        // Insertar el nombre del usuario en el elemento HTML
+        document.getElementById('user-name').innerHTML = userName;
+      });</script>
+    <!-- Topbar Start -->
+    <div class="container-fluid px-5 d-none d-lg-block">
+        <div class="row gx-5 py-3 align-items-center">
+            <div class="col-lg-3">
+                <div class="d-flex align-items-center justify-content-start">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="d-flex align-items-center justify-content-center">
+                    <a href="ajustes.html" class="navbar-brand ms-lg-5">
+                        <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Wattify</span></h1>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="d-flex align-items-center justify-content-end">
+                    <a class="btn btn-primary btn-square rounded-circle me-2" href="https://twitter.com/UPCedu" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-primary btn-square rounded-circle me-2" href="https://www.facebook.com/upcedu" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-primary btn-square rounded-circle me-2" href="https://www.linkedin.com/school/universidad-peruana-de-ciencias-aplicadas/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-primary btn-square rounded-circle" href="https://www.instagram.com/upcedu/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex d-lg-none">
+            <h1 class="m-0 display-4 text-secondary">Wattify</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto py-0">
+                <a href="consumo.html" class="nav-item nav-link">Consumo</a>
+                <a href="ajustes.html" class="nav-item nav-link active">Ajustes</a>
+                <a href="tips.html" class="nav-item nav-link">Tips</a>
+                <div class="nav-item dropdown">
+                    <a id="user-name" href="#" class="nav-link dropdown-toggle btn-primary" data-bs-toggle="dropdown"></a>
+                    <div class="dropdown-menu m-0">
+                        <a href="index.html" id="logout-button" class="dropdown-item">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Ajustes Start-->
+    <section class="py-5 my-5">
+		<div class="container">
+			<h1 class="mb-5">Ajustes de Cuenta</h1>
+			<div class="bg-white shadow rounded-lg d-block d-sm-flex">
+				<div class="profile-tab-nav border-right">
+					<div class="p-4">
+						<h4 class="text-center">Camilla Navinta</h4>
+					</div>
+
+					<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical"> <!--para cambiar de seccion-->
+						<a class="nav-link active" id="account-tab" data-toggle="pill" href="#account" role="tab" aria-controls="account" aria-selected="true">
+							<i class="fa fa-home text-center mr-1"></i> 
+							Ajustes de Cuenta
+						</a>
+
+						<a class="nav-link" id="security-tab" data-toggle="pill" href="#security" role="tab" aria-controls="security" aria-selected="false">
+							<i class="fa fa-user text-center mr-1"></i> 
+							Seguridad
+						</a>
+						<a class="nav-link" id="application-tab" data-toggle="pill" href="#application" role="tab" aria-controls="application" aria-selected="false">
+							<i class="fa fa-tv text-center mr-1"></i> 
+							Dispositivo 
+						</a>
+						<a class="nav-link" id="notification-tab" data-toggle="pill" href="#notification" role="tab" aria-controls="notification" aria-selected="false">
+							<i class="fa fa-bell text-center mr-1"></i> 
+							Notificaciones
+						</a>
+                        <a class="nav-link" id="notification-tab" href="contacto.html">
+                            <i class="fa-solid fa-phone"></i>
+							Soporte
+						</a>
+                        <a class="nav-link" id="notification-tab" href="pago.html">
+                            <i class="fa-solid fa-credit-card"></i>
+							Metodos de Pago
+						</a>
+					</div>
+
+				</div>
+
+				<div class="tab-content p-4 p-md-5" id="v-pills-tabContent">
+                    
+					<div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="account-tab">
+						<h3 class="mb-4">Ajustes de Cuenta</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Nombres</label>
+								  	<input type="text" class="form-control" value="Camilla">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Apellidos</label>
+								  	<input type="text" class="form-control" value="Navinta">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Correo</label>
+								  	<input type="text" class="form-control" value="camilladelegada@gmail.com">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Numero Telefonico</label>
+								  	<input type="text" class="form-control" value="+51 994 928 908">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Compañia</label>
+								  	<input type="text" class="form-control" value="Wattify">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Designacion</label>
+								  	<input type="text" class="form-control" value="UI Desarrollador">
+								</div>
+							</div>
+						
+						</div>
+						<div>
+							<button class="btn btn-primary">Actualizar</button>
+							<button class="btn btn-light">Cancelar</button>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
+						<h3 class="mb-4">Ajustes de Seguridad</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Login</label>
+								  	<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Autenticacion 2 pasos</label>
+								  	<input type="text" class="form-control">
+								</div>
+							</div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          <label>Contraseña anterior</label>
+                                          <input type="password" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          <label>Nueva Contraseña</label>
+                                          <input type="password" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          <label>Confirmar nueva contraseña</label>
+                                          <input type="password" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="recovery">
+										<label class="form-check-label" for="recovery">
+										Recovery
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<button class="btn btn-primary">Actualizar</button>
+							<button class="btn btn-light">Cancelar</button>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="application" role="tabpanel" aria-labelledby="application-tab">
+						<h3 class="mb-4">Dispositivo</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="app-check">
+										<label class="form-check-label" for="app-check">
+										Estado del dispositivo del Usuario
+										</label>
+									</div>
+                                    <img class="" src="assets/img/about.png">
+								</div>
+							</div>
+						</div>
+						<div>
+							<button class="btn btn-primary">Actualizar</button>
+							<button class="btn btn-light">Cancelar</button>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="notification" role="tabpanel" aria-labelledby="notification-tab">
+						<h3 class="mb-4">Ajustes de Notificacion</h3>
+						<div class="form-group">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="notification1">
+								<label class="form-check-label" for="notification1">
+									Recibir notificaciones sobre tu consumo energético
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="notification2" >
+								<label class="form-check-label" for="notification2">
+									Notificaciones del dispositivo
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="notification3" >
+								<label class="form-check-label" for="notification3">
+									Recibir notificaciones del Newsletter
+								</label>
+							</div>
+						</div>
+						<div>
+							<button class="btn btn-primary">Actualizar</button>
+							<button class="btn btn-light">Cancelar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <!-- Ajustes End-->
+
+
+    <!-- Footer Start -->
+    
+    <div class="container-fluid bg-footer bg-primary text-white mt-5">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <h4 class="text-black mb-4">Contáctanos</h4>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-black me-2"></i>
+                                <p class="text-black mb-0">Prolongación Primavera 2390, Monterrico, Santiago de Surco</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-black me-2"></i>
+                                <p class="text-black mb-0">contacto@wattify.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-black me-2"></i>
+                                <p class="text-black mb-0">(01) 630-3333</p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-secondary btn-square rounded-circle me-2" href="https://twitter.com/UPCedu" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-secondary btn-square rounded-circle me-2" href="https://www.facebook.com/upcedu" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-secondary btn-square rounded-circle me-2" href="https://www.linkedin.com/school/universidad-peruana-de-ciencias-aplicadas/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-secondary btn-square rounded-circle" href="https://www.instagram.com/upcedu/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <h4 class="text-black mb-4">Acceso Rápido</h4>
+                            <div class="d-flex flex-column justify-content-start">
+                                <a class="text-black mb-2" href="#"><i class="bi bi-arrow-right text-black me-2"></i>Página principal</a>
+                                <a class="text-black mb-2" href="#"><i class="bi bi-arrow-right text-black me-2"></i>Acerca de Nosotros</a>
+                                <a class="text-black mb-2" href="#"><i class="bi bi-arrow-right text-black me-2"></i>Servicios</a>
+                                <a class="text-black mb-2" href="#"><i class="bi bi-arrow-right text-black me-2"></i>Membresías</a>
+                                <a class="text-black" href="#"><i class="bi bi-arrow-right text-black me-2"></i>Contáctanos</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <h4 class="text-black mb-4">Políticas y términos</h4>
+                            <div class="d-flex flex-column justify-content-start">
+                                <a class="text-black mb-2" href="#"><i class="bi bi-arrow-right text-black me-2"></i>Términos y condiciones</a>
+                                <a class="text-black mb-2" href="#"><i class="bi bi-arrow-right text-black me-2"></i>Políticas de privacidad</a>
+                                <a class="text-black mb-2" href="#"><i class="bi bi-arrow-right text-black me-2"></i>Ética de la empresa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-lg-n5">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-secondary p-5">
+                        <h4 class="text-white">Newsletter</h4>
+                        <h6 class="text-white">Suscríbete para recibir noticias</h6>
+                        <p>Las últimas novedades de tecnología eco-amigable</p>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-white p-3" placeholder="Su e-mail">
+                                <button class="btn btn-primary">Suscribirse</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/easing/easing.min.js"></script>
+    <script src="assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="assets/lib/counterup/counterup.min.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="assets/scripts/main.js"></script>
+</body>
+
+</html>
